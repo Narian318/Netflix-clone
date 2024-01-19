@@ -45,7 +45,7 @@ jobs:
 
   deploy:    
     needs: build-analyze-scan  
-    runs-on: [aws-netflix]  
+    runs-on: [nn-runner]  
     steps:
       - name: Pull the docker image
         run: docker pull narian318/nn-netflix:latest
