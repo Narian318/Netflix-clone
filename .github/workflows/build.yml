@@ -36,7 +36,7 @@ jobs:
       - name: Docker build and push
         run: |
           #run commands to build and push docker images
-          docker build --build-arg  -t nn-netflix .
+          docker build --build-arg a07780a3569c6f6da60c9936a393d571 -t nn-netflix .
           docker tag netflix narian318/nn-netflix:latest
           docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
           docker push narian318/nn-netflix:latest  
