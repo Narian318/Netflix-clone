@@ -50,6 +50,6 @@ jobs:
       - name: Pull the docker image
         run: docker pull narian318/nn-netflix:latest
       - name: Run the container netflix
-        run: docker run -d --name nn-netflix2 -p 8081:80 narian318/nn-netflix:latest
+        run: docker run -d --name nn-netflix3 -p 8082:80 narian318/nn-netflix:latest
 
 
